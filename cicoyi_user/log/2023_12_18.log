@@ -1,0 +1,20 @@
+2023/12/18 12:00:26 log.go:39: 日志服务启动
+2023/12/18 12:01:26 log.go:39: 日志服务启动
+2023/12/18 12:01:26 router.go:39: The user api service has been started, and the port is : 9001
+2023/12/18 12:01:52 router.go:56: ---------------------The user program has been closed---------------------------
+2023/12/18 12:11:19 log.go:39: 日志服务启动
+2023/12/18 12:11:19 msyql.go:29: success to connect to the database
+2023/12/18 12:11:19 router.go:39: The userHandlers api service has been started, and the port is : 9001
+2023/12/18 12:11:57 router.go:56: ---------------------The userHandlers program has been closed---------------------------
+2023/12/18 12:12:14 log.go:39: 日志服务启动
+2023/12/18 12:12:14 msyql.go:29: success to connect to the database
+2023/12/18 12:12:14 router.go:39: The userHandlers api service has been started, and the port is : 9001
+2023/12/18 13:49:39 router.go:56: ---------------------The userHandlers program has been closed---------------------------
+2023/12/18 13:50:19 log.go:39: 日志服务启动
+2023/12/18 13:50:19 msyql.go:29: success to connect to the database
+2023/12/18 13:50:19 router.go:39: The userHandlers api service has been started, and the port is : 9001
+2023/12/18 13:52:58 router.go:56: ---------------------The userHandlers program has been closed---------------------------
+2023/12/18 13:53:05 log.go:39: 日志服务启动
+2023/12/18 13:53:05 msyql.go:29: success to connect to the database
+2023/12/18 13:53:05 router.go:39: The userHandlers api service has been started, and the port is : 9001
+2023/12/18 13:58:26 router.go:56: ---------------------The userHandlers program has been closed---------------------------

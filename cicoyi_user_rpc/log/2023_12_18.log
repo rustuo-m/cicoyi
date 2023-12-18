@@ -1,0 +1,3 @@
+2023/12/18 17:53:40 log.go:39: 日志服务启动
+2023/12/18 17:53:40 rpc.go:38: The user rpc service has been started, and the port is : 50052
+2023/12/18 17:53:56 rpc.go:47: ---------------------The program has been closed---------------------------

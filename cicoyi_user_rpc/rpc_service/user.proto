@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package user;
+option go_package = "rpc_service/pb";
+
+service UserService {
+  //用户名密码注册
+  rpc GenerateTokenByName(RegisterByNameReq) returns (RegisterResponse);
+  // 邮箱验证码登录
+  rpc GenerateTokenByEmail(RegisterByEmailCodeReq) returns (RegisterResponse);
+  // 设置密码
+  rpc SetPassword(SetPasswordReq) returns (SetPasswordResp);
+  // 根据条件查询用户列表
+  rpc GetUserListByCondition(GetUserListByConditionReq) returns(GetUserListByConditionResp);
+}
+
+message RegisterByNameReq {
+  string name = 1;
+  string password = 2;
+}
+
+message RegisterByEmailCodeReq {
+  string email = 1;
+  string code = 2;
+}
+
+message RegisterResponse {
+  bool ok = 1;
+  string msg = 2;
+  string code = 3;
+}
+
+message SetPasswordReq{
+  string password = 1;
+}
+
+message SetPasswordResp{
+  bool ok = 1;
+  string msg = 2;
+  string code = 3;
+}
+
+message GetUserListByConditionReq{
+  string email = 1;
+  string name = 2;
+}
+
+message UserItem {
+  int64 id = 1;
+  string name = 2;
+  string password = 3;
+  string email = 4;
+  string phone = 5;
+  string gender = 6;
+  string birth = 7;
+}
+
+message GetUserListByConditionResp{
+  repeated UserItem userList = 1;
+  string  msg = 2;
+  string code = 3;
+}

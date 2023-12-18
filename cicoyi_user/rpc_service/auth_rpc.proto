@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package auth;
+option go_package = "rpc_service/pb";
+
+service AuthService {
+    //用户名密码登录
+    rpc GenerateTokenByName(AuthRequestByName) returns (AuthResponse);
+    // 邮箱密码登录
+    rpc GenerateTokenByEmail(AuthRequestByEmail) returns (AuthResponse);
+    // 邮箱验证码登录
+    rpc GenerateTokenByEmailCode(AuthRequestByEmailCode) returns (AuthResponse);
+}
+
+message AuthRequestByName {
+  string name = 1; 
+  string password = 2; 
+}
+
+message AuthRequestByEmailCode {
+  string email = 1; 
+  string code = 2; 
+}
+
+message AuthRequestByEmail {
+  string email = 1; 
+  string password = 2; 
+}
+
+message AuthResponse {
+  string token = 1; 
+  string msg = 2;
+}

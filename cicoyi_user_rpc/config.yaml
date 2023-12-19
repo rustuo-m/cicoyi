@@ -1,2 +1,4 @@
 host: 127.0.0.1
 port: 50052
+
+database: root:Mjh010818.@tcp(127.0.0.1:3306)/cicoyi_user?charset=utf8mb4&parseTime=True&loc=Local

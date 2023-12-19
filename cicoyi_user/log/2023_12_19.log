@@ -1,0 +1,6 @@
+2023/12/19 22:24:13 log.go:39: 日志服务启动
+2023/12/19 22:24:13 msyql.go:21: Unable to connect to the database: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2023/12/19 22:24:37 log.go:39: 日志服务启动
+2023/12/19 22:24:37 msyql.go:29: success to connect to the database
+2023/12/19 22:24:37 router.go:39: The userHandlers api service has been started, and the port is : 9001
+2023/12/19 22:38:02 router.go:56: ---------------------The userHandlers program has been closed---------------------------

@@ -8,5 +8,6 @@ func main() {
 	start := initialize.Initialize{}
 	start.Log.InitLog()
 	start.Config.InitConfig()
+	start.Mysql.InitDatabase()
 	start.Rpc.InitRpc()
 }

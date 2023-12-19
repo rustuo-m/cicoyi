@@ -9,4 +9,5 @@ type Initialize struct {
 	Log    common.LogInitialize
 	Config common.ConfigInitialize
 	Rpc    rpc.RpcInitialize
+	Mysql  common.Database
 }

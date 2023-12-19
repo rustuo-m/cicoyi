@@ -2,7 +2,7 @@ package userHandlers
 
 import (
 	"log"
-	
+
 	"github.com/gin-gonic/gin"
 	"github.com/rustuo-m/cicoyi/cicoyi_user/internal/common/r"
 	"github.com/rustuo-m/cicoyi/cicoyi_user/internal/global"
@@ -30,4 +30,14 @@ func RegisterUser(c *gin.Context) {
 	} else {
 		r.Failed("user exists", c)
 	}
+}
+
+func UserList(c *gin.Context) {
+	var req r.UserListReq
+	err := c.ShouldBindJSON(&req)
+	if err != nil {
+		c.String(500, "bind json error", err)
+		return
+	}
+
 }

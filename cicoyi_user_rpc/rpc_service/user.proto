@@ -43,6 +43,8 @@ message SetPasswordResp{
 message GetUserListByConditionReq{
   string email = 1;
   string name = 2;
+  int64 pageSize = 3;
+  int64 pageNumber = 4;
 }
 
 message UserItem {
